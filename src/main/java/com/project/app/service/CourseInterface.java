@@ -6,30 +6,30 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface CourseInterface {
-	
-	  /**
-	 * method FindAll.
-	 */
-	  public Flux<Course> findAll();
 
-	  /**
-	 * method FindById.
-	 */
-	  public Mono<Course> findById(String id);
+  /**
+  * method FindAll.
+  */
+  public Flux<Course> findAll();
 
-	  /**
-	 * method save.
-	 */
-	  public Mono<Course> save(Course course);
+  /**
+ * .method FindById.
+ */
+  public Mono<Course> findById(String id);
 
-	  /**
-	 * method delete.
-	 */
-	  public Mono<Void> delete(Course course);
+  /**
+  * method save.
+  */
+  public Mono<Course> save(Course course);
 
-	  /**
-	 * findByName.
-	 */
-	  public Flux<Course> findByName(String name);
+  /**
+  * method delete.
+  */
+  public Mono<Void> delete(Course course);
+
+  /**
+  * findByName.
+  **/
+  public Flux<Course> findByName(String name);
 
 }
